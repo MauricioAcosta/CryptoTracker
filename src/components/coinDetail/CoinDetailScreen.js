@@ -9,9 +9,9 @@ import {
   StyleSheet,
   Alert
 } from 'react-native';
-import Colors from 'cryptoTracker/src/res/colors';
-import Http from 'cryptoTracker/src/libs/http';
-import Storage from 'cryptoTracker/src/libs/storage';
+import Colors from 'CryptoTracker/src/res/colors';
+import Http from 'CryptoTracker/src/libs/http';
+import Storage from 'CryptoTracker/src/libs/storage';
 import CoinMarketItem from './CoinMarketItem';
 
 class CoinDetailScreen extends Component {

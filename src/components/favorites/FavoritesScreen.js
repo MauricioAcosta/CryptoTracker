@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import { View, FlatList, StyleSheet } from 'react-native';
 
 import FavoritesEmptyState from './FavoritesEmptyState';
-import CoinsItem from 'cryptoTracker/src/components/coins/CoinsItem';
+import CoinsItem from 'CryptoTracker/src/components/coins/CoinsItem';
 
-import Colors from 'cryptoTracker/src/res/colors';
-import Storage from 'cryptoTracker/src/libs/storage';
+import Colors from 'CryptoTracker/src/res/colors';
+import Storage from 'CryptoTracker/src/libs/storage';
 
 class FavoritesScreen extends Component {
 

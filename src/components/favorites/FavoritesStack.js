@@ -1,7 +1,7 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import FavoritesScreen from './FavoritesScreen';
-import Colors from 'cryptoTracker/src/res/colors';
+import Colors from 'CryptoTracker/src/res/colors';
 
 const Stack = createStackNavigator();
 

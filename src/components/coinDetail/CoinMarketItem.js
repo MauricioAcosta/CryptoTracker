@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import Colors from 'cryptoTracker/src/res/colors';
+import Colors from 'CryptoTracker/src/res/colors';
 
 const CoinDetailScreen = ({ item }) => {
 

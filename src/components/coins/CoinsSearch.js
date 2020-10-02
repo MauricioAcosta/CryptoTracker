@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { TextInput, Platform, View, StyleSheet } from 'react-native';
-import Colors from 'cryptoTracker/src/res/colors';
+import Colors from 'CryptoTracker/src/res/colors';
 
 class CoinsSearch extends Component {
 

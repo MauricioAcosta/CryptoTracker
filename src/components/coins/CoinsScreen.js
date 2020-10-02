@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { View, FlatList, ActivityIndicator, Text, StyleSheet } from 'react-native';
-import Http from 'cryptoTracker/src/libs/http';
+import Http from 'CryptoTracker/src/libs/http';
 import CoinsItem from './CoinsItem';
 import CoinsSearch from './CoinsSearch';
-import Colors from 'cryptoTracker/src/res/colors';
+import Colors from 'CryptoTracker/src/res/colors';
 
 class CoinsScreen extends Component {
 
