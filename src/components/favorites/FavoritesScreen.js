@@ -52,23 +52,23 @@ class FavoritesScreen extends Component {
     return (
       <View style={styles.container}>
 
-       { favorites.length == 0 ?
-        <FavoritesEmptyState />
-        : null
-       }
+        { favorites.length == 0 ?
+          <FavoritesEmptyState />
+          : null
+        }
 
-       { favorites.length > 0 ?
-        <FlatList
-          data={favorites}
-          renderItem={({ item }) =>
-            <CoinsItem
-              item={item}
-              onPress={() => this.handlePress(item)}
-            />
-          }
-        />
-        : null
-       }
+        { favorites.length > 0 ?
+          <FlatList
+            data={favorites}
+            renderItem={({ item }) =>
+              <CoinsItem
+                item={item}
+                onPress={() => this.handlePress(item)}
+              />
+            }
+          />
+          : null
+        }
 
       </View>
     );

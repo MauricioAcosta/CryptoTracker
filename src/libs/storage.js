@@ -12,7 +12,7 @@ class Storage {
 
       return true;
 
-    } catch(err) {
+    } catch (err) {
       console.log("storage store err", err);
 
       return false;
@@ -24,7 +24,7 @@ class Storage {
 
       return await AsyncStorage.getItem(key);
 
-    } catch(err) {
+    } catch (err) {
       console.log("storage get err", err);
 
       throw Error(err);
@@ -37,7 +37,7 @@ class Storage {
 
       return await AsyncStorage.multiGet(keys);
 
-    } catch(err) {
+    } catch (err) {
       console.log("storage multiGet err", err);
 
       throw Error(err);
@@ -49,7 +49,7 @@ class Storage {
 
       return await AsyncStorage.getAllKeys();
 
-    } catch(err) {
+    } catch (err) {
       console.log("storage getAllKeys err", err);
 
       throw Error(err);
@@ -62,7 +62,7 @@ class Storage {
 
       return true;
 
-    } catch(err) {
+    } catch (err) {
       console.log("storage remove err", err);
 
       return false;

@@ -16,7 +16,6 @@ class CoinsScreen extends Component {
   componentDidMount = () => {
 
     this.getCoins();
-
   }
 
   getCoins = async () => {
@@ -50,7 +49,7 @@ class CoinsScreen extends Component {
     return (
       <View style={styles.container}>
 
-      <CoinsSearch onChange={this.handleSearch} />
+        <CoinsSearch onChange={this.handleSearch} />
 
         { loading ?
           <ActivityIndicator
@@ -66,9 +65,9 @@ class CoinsScreen extends Component {
           data={coins}
           renderItem={({ item }) =>
             <CoinsItem
-            item={item}
-            onPress={() => this.handlePress(item)}
-          />
+              item={item}
+              onPress={() => this.handlePress(item)}
+            />
           }
         />
       </View>

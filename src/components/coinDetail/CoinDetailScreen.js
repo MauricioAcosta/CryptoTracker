@@ -24,14 +24,14 @@ class CoinDetailScreen extends Component {
 
   toogleFavorite = () => {
 
-    if(this.state.isFavorite) {
+    if (this.state.isFavorite) {
       this.removeFavorite();
     } else {
       this.addFavorite();
     }
   }
 
-  addFavorite = async() => {
+  addFavorite = async () => {
     const coin = JSON.stringify(this.state.coin);
     const key = `favorite-${this.state.coin.id}`;
 
@@ -39,7 +39,7 @@ class CoinDetailScreen extends Component {
 
     console.log("stored", stored);
 
-    if(stored) {
+    if (stored) {
       this.setState({ isFavorite: true });
     }
 
@@ -50,7 +50,7 @@ class CoinDetailScreen extends Component {
     Alert.alert("Remove favorite", "Are you sure?", [
       {
         text: "cancel",
-        onPress: () => {},
+        onPress: () => { },
         style: "cancel"
       },
       {
@@ -75,11 +75,11 @@ class CoinDetailScreen extends Component {
 
       const favStr = await Storage.instance.get(key);
 
-      if(favStr != null) {
+      if (favStr != null) {
         this.setState({ isFavorite: true });
       }
 
-    } catch(err) {
+    } catch (err) {
       console.log("get favorites err", err);
     }
 
@@ -154,10 +154,10 @@ class CoinDetailScreen extends Component {
             style={[
               styles.btnFavorite,
               isFavorite ?
-              styles.btnFavoriteRemove :
-              styles.btnFavoriteAdd
+                styles.btnFavoriteRemove :
+                styles.btnFavoriteAdd
             ]}>
-            <Text style={styles.btnFavoriteText}>{ isFavorite ? "Remove favorite" : "Add favorite"}</Text>
+            <Text style={styles.btnFavoriteText}>{isFavorite ? "Remove favorite" : "Add favorite"}</Text>
           </Pressable>
         </View>
 
@@ -174,7 +174,7 @@ class CoinDetailScreen extends Component {
             <View style={styles.sectionHeader}>
               <Text style={styles.sectionText}>{section.title}</Text>
             </View>
-            }
+          }
         />
 
         <Text style={styles.marketsTitle}>Markets</Text>

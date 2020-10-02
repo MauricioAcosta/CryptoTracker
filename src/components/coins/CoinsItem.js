@@ -6,7 +6,7 @@ const CoinsItem = ({ item, onPress }) => {
 
   getImgArrow = () => {
 
-    if(item.percent_change_1h > 0) {
+    if (item.percent_change_1h > 0) {
 
       return require("cryptoTracker/src/assets/arrow_up.png");
 

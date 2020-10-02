@@ -9,7 +9,7 @@ const FavoritesStack = () => {
 
   return (
     <Stack.Navigator
-       screenOptions={{
+      screenOptions={{
         headerStyle: {
           backgroundColor: Colors.blackPearl,
           shadowColor: Colors.blackPearl

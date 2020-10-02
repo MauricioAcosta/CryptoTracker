@@ -29,7 +29,7 @@ class CoinsSearch extends Component {
             Platform.OS == 'ios' ?
               styles.textInputIOS :
               styles.textInputAndroid
-            ]}
+          ]}
           onChangeText={this.handleText}
           value={query}
           placeholder="Search coin"
